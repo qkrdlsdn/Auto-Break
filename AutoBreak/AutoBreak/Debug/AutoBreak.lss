@@ -1,0 +1,722 @@
+
+MicroProject.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000003ec  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000398  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000003ec  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000041c  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000068  00000000  00000000  0000045c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000ec6  00000000  00000000  000004c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000900  00000000  00000000  0000138a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000545  00000000  00000000  00001c8a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000d0  00000000  00000000  000021d0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000049b  00000000  00000000  000022a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000004e5  00000000  00000000  0000273b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000058  00000000  00000000  00002c20  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	8b d0       	rcall	.+278    	; 0x1b0 <main>
+  9a:	7c c1       	rjmp	.+760    	; 0x394 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <Port_Init>:
+#define M2_HIGH	(PORTB |= 0x04)
+#define M2_LOW	(PORTB &= 0xFB)
+
+void Port_Init()
+{
+	DDRB = 0xff; //Motor
+  9e:	8f ef       	ldi	r24, 0xFF	; 255
+  a0:	87 bb       	out	0x17, r24	; 23
+	DDRC = 0x0f; //RGB
+  a2:	8f e0       	ldi	r24, 0x0F	; 15
+  a4:	84 bb       	out	0x14, r24	; 20
+	DDRA = 0x01; // Buzzer
+  a6:	81 e0       	ldi	r24, 0x01	; 1
+  a8:	8a bb       	out	0x1a, r24	; 26
+	DDRE = ((DDRE | (1<<TRIG)) & ~(1<<ECHO)); // Super Sonic
+  aa:	82 b1       	in	r24, 0x02	; 2
+  ac:	8f 77       	andi	r24, 0x7F	; 127
+  ae:	80 64       	ori	r24, 0x40	; 64
+  b0:	82 b9       	out	0x02, r24	; 2
+	DDRF = 0x00;
+  b2:	10 92 61 00 	sts	0x0061, r1	; 0x800061 <__TEXT_REGION_LENGTH__+0x7e0061>
+  b6:	08 95       	ret
+
+000000b8 <MotorGo>:
+}
+
+void MotorGo()
+{
+	M0_LOW; M1_HIGH; M2_HIGH;
+  b8:	88 b3       	in	r24, 0x18	; 24
+  ba:	8e 7f       	andi	r24, 0xFE	; 254
+  bc:	88 bb       	out	0x18, r24	; 24
+  be:	88 b3       	in	r24, 0x18	; 24
+  c0:	82 60       	ori	r24, 0x02	; 2
+  c2:	88 bb       	out	0x18, r24	; 24
+  c4:	88 b3       	in	r24, 0x18	; 24
+  c6:	84 60       	ori	r24, 0x04	; 4
+  c8:	88 bb       	out	0x18, r24	; 24
+  ca:	08 95       	ret
+
+000000cc <MotorBack>:
+}
+
+void MotorBack()
+{
+	M0_HIGH; M1_LOW; M2_HIGH;
+  cc:	88 b3       	in	r24, 0x18	; 24
+  ce:	81 60       	ori	r24, 0x01	; 1
+  d0:	88 bb       	out	0x18, r24	; 24
+  d2:	88 b3       	in	r24, 0x18	; 24
+  d4:	8d 7f       	andi	r24, 0xFD	; 253
+  d6:	88 bb       	out	0x18, r24	; 24
+  d8:	88 b3       	in	r24, 0x18	; 24
+  da:	84 60       	ori	r24, 0x04	; 4
+  dc:	88 bb       	out	0x18, r24	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  de:	2f ef       	ldi	r18, 0xFF	; 255
+  e0:	81 ee       	ldi	r24, 0xE1	; 225
+  e2:	94 e0       	ldi	r25, 0x04	; 4
+  e4:	21 50       	subi	r18, 0x01	; 1
+  e6:	80 40       	sbci	r24, 0x00	; 0
+  e8:	90 40       	sbci	r25, 0x00	; 0
+  ea:	e1 f7       	brne	.-8      	; 0xe4 <MotorBack+0x18>
+  ec:	00 c0       	rjmp	.+0      	; 0xee <MotorBack+0x22>
+  ee:	00 00       	nop
+	_delay_ms(100);
+	M2_LOW;
+  f0:	88 b3       	in	r24, 0x18	; 24
+  f2:	8b 7f       	andi	r24, 0xFB	; 251
+  f4:	88 bb       	out	0x18, r24	; 24
+  f6:	8f e1       	ldi	r24, 0x1F	; 31
+  f8:	9e e4       	ldi	r25, 0x4E	; 78
+  fa:	01 97       	sbiw	r24, 0x01	; 1
+  fc:	f1 f7       	brne	.-4      	; 0xfa <MotorBack+0x2e>
+  fe:	00 c0       	rjmp	.+0      	; 0x100 <MotorBack+0x34>
+ 100:	00 00       	nop
+ 102:	08 95       	ret
+
+00000104 <MotorSTOP>:
+	_delay_ms(5);
+}
+
+void MotorSTOP()
+{
+	M0_HIGH; M1_HIGH;
+ 104:	88 b3       	in	r24, 0x18	; 24
+ 106:	81 60       	ori	r24, 0x01	; 1
+ 108:	88 bb       	out	0x18, r24	; 24
+ 10a:	88 b3       	in	r24, 0x18	; 24
+ 10c:	82 60       	ori	r24, 0x02	; 2
+ 10e:	88 bb       	out	0x18, r24	; 24
+ 110:	08 95       	ret
+
+00000112 <SuperSonic>:
+}
+
+void SuperSonic(unsigned int *distance)
+{
+ 112:	cf 93       	push	r28
+ 114:	df 93       	push	r29
+ 116:	ec 01       	movw	r28, r24
+	TCCR1B = 0x03;
+ 118:	83 e0       	ldi	r24, 0x03	; 3
+ 11a:	8e bd       	out	0x2e, r24	; 46
+	PORTE &= ~(1<<TRIG);
+ 11c:	83 b1       	in	r24, 0x03	; 3
+ 11e:	8f 7b       	andi	r24, 0xBF	; 191
+ 120:	83 b9       	out	0x03, r24	; 3
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 122:	85 e3       	ldi	r24, 0x35	; 53
+ 124:	8a 95       	dec	r24
+ 126:	f1 f7       	brne	.-4      	; 0x124 <SuperSonic+0x12>
+ 128:	00 00       	nop
+	_delay_us(10);
+	PORTE |= (1<<TRIG);
+ 12a:	83 b1       	in	r24, 0x03	; 3
+ 12c:	80 64       	ori	r24, 0x40	; 64
+ 12e:	83 b9       	out	0x03, r24	; 3
+ 130:	85 e3       	ldi	r24, 0x35	; 53
+ 132:	8a 95       	dec	r24
+ 134:	f1 f7       	brne	.-4      	; 0x132 <SuperSonic+0x20>
+ 136:	00 00       	nop
+	_delay_us(10);
+	PORTE &= ~(1<<TRIG);
+ 138:	83 b1       	in	r24, 0x03	; 3
+ 13a:	8f 7b       	andi	r24, 0xBF	; 191
+ 13c:	83 b9       	out	0x03, r24	; 3
+	while(!(PINE & (1<<ECHO)));
+ 13e:	0f 9b       	sbis	0x01, 7	; 1
+ 140:	fe cf       	rjmp	.-4      	; 0x13e <SuperSonic+0x2c>
+	TCNT1 = 0x0000;
+ 142:	1d bc       	out	0x2d, r1	; 45
+ 144:	1c bc       	out	0x2c, r1	; 44
+	while(PINE & (1<<ECHO));
+ 146:	0f 99       	sbic	0x01, 7	; 1
+ 148:	fe cf       	rjmp	.-4      	; 0x146 <SuperSonic+0x34>
+	TCCR1B = 0x00;
+ 14a:	1e bc       	out	0x2e, r1	; 46
+	*distance = (unsigned int)(SOUND_VELOCITY * (TCNT1 * 4 / 2) / 1000);
+ 14c:	2c b5       	in	r18, 0x2c	; 44
+ 14e:	3d b5       	in	r19, 0x2d	; 45
+ 150:	22 0f       	add	r18, r18
+ 152:	33 1f       	adc	r19, r19
+ 154:	22 0f       	add	r18, r18
+ 156:	33 1f       	adc	r19, r19
+ 158:	36 95       	lsr	r19
+ 15a:	27 95       	ror	r18
+ 15c:	a4 e5       	ldi	r26, 0x54	; 84
+ 15e:	b1 e0       	ldi	r27, 0x01	; 1
+ 160:	0a d1       	rcall	.+532    	; 0x376 <__umulhisi3>
+ 162:	28 ee       	ldi	r18, 0xE8	; 232
+ 164:	33 e0       	ldi	r19, 0x03	; 3
+ 166:	40 e0       	ldi	r20, 0x00	; 0
+ 168:	50 e0       	ldi	r21, 0x00	; 0
+ 16a:	e3 d0       	rcall	.+454    	; 0x332 <__udivmodsi4>
+ 16c:	39 83       	std	Y+1, r19	; 0x01
+ 16e:	28 83       	st	Y, r18
+}
+ 170:	df 91       	pop	r29
+ 172:	cf 91       	pop	r28
+ 174:	08 95       	ret
+
+00000176 <RGB_ctrl>:
+
+void RGB_ctrl(unsigned char RGB)
+{	
+	PORTC = RGB;
+ 176:	85 bb       	out	0x15, r24	; 21
+ 178:	08 95       	ret
+
+0000017a <Buzzer_ctrl>:
+}
+
+void Buzzer_ctrl(int on)
+{
+	if (on == 1)	PORTA = 0x01;
+ 17a:	01 97       	sbiw	r24, 0x01	; 1
+ 17c:	19 f4       	brne	.+6      	; 0x184 <Buzzer_ctrl+0xa>
+ 17e:	81 e0       	ldi	r24, 0x01	; 1
+ 180:	8b bb       	out	0x1b, r24	; 27
+ 182:	08 95       	ret
+	else PORTA = 0x00;
+ 184:	1b ba       	out	0x1b, r1	; 27
+ 186:	08 95       	ret
+
+00000188 <TouchSensor>:
+}
+
+int TouchSensor()
+{
+	if((PIND|0xfe) == 0xff)
+ 188:	80 b3       	in	r24, 0x10	; 16
+ 18a:	8e 6f       	ori	r24, 0xFE	; 254
+ 18c:	8f 3f       	cpi	r24, 0xFF	; 255
+ 18e:	19 f4       	brne	.+6      	; 0x196 <TouchSensor+0xe>
+		return 1;
+ 190:	81 e0       	ldi	r24, 0x01	; 1
+ 192:	90 e0       	ldi	r25, 0x00	; 0
+ 194:	08 95       	ret
+	else
+		return 0;
+ 196:	80 e0       	ldi	r24, 0x00	; 0
+ 198:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 19a:	08 95       	ret
+
+0000019c <Button>:
+
+int Button()
+{
+	if((PINF|0xfe) == 0xff)
+ 19c:	80 b1       	in	r24, 0x00	; 0
+ 19e:	8e 6f       	ori	r24, 0xFE	; 254
+ 1a0:	8f 3f       	cpi	r24, 0xFF	; 255
+ 1a2:	19 f4       	brne	.+6      	; 0x1aa <Button+0xe>
+		return 0;
+ 1a4:	80 e0       	ldi	r24, 0x00	; 0
+ 1a6:	90 e0       	ldi	r25, 0x00	; 0
+ 1a8:	08 95       	ret
+	else
+		return 1;
+ 1aa:	81 e0       	ldi	r24, 0x01	; 1
+ 1ac:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 1ae:	08 95       	ret
+
+000001b0 <main>:
+
+int main(void)
+{
+ 1b0:	cf 93       	push	r28
+ 1b2:	df 93       	push	r29
+ 1b4:	00 d0       	rcall	.+0      	; 0x1b6 <main+0x6>
+ 1b6:	cd b7       	in	r28, 0x3d	; 61
+ 1b8:	de b7       	in	r29, 0x3e	; 62
+	Port_Init();
+ 1ba:	71 df       	rcall	.-286    	; 0x9e <Port_Init>
+	
+	unsigned int distance = 0;
+ 1bc:	1a 82       	std	Y+2, r1	; 0x02
+ 1be:	19 82       	std	Y+1, r1	; 0x01
+	double delay = 0;
+	int flag = 1;
+	RGB_ctrl(0x00);
+ 1c0:	80 e0       	ldi	r24, 0x00	; 0
+ 1c2:	d9 df       	rcall	.-78     	; 0x176 <RGB_ctrl>
+{
+	Port_Init();
+	
+	unsigned int distance = 0;
+	double delay = 0;
+	int flag = 1;
+ 1c4:	01 e0       	ldi	r16, 0x01	; 1
+ 1c6:	10 e0       	ldi	r17, 0x00	; 0
+	RGB_ctrl(0x00);
+	
+    while (1) 
+    {
+		SuperSonic(&distance);
+ 1c8:	ce 01       	movw	r24, r28
+ 1ca:	01 96       	adiw	r24, 0x01	; 1
+		
+		if(Button())
+ 1cc:	a2 df       	rcall	.-188    	; 0x112 <SuperSonic>
+ 1ce:	e6 df       	rcall	.-52     	; 0x19c <Button>
+ 1d0:	89 2b       	or	r24, r25
+ 1d2:	11 f0       	breq	.+4      	; 0x1d8 <main+0x28>
+		{
+			flag = 1;
+ 1d4:	01 e0       	ldi	r16, 0x01	; 1
+		}
+		
+		if(flag == 1)
+ 1d6:	10 e0       	ldi	r17, 0x00	; 0
+ 1d8:	01 30       	cpi	r16, 0x01	; 1
+		{
+			MotorGo();
+ 1da:	11 05       	cpc	r17, r1
+ 1dc:	a9 f7       	brne	.-22     	; 0x1c8 <main+0x18>
+			
+			if(TouchSensor() && distance < 100)
+ 1de:	6c df       	rcall	.-296    	; 0xb8 <MotorGo>
+ 1e0:	d3 df       	rcall	.-90     	; 0x188 <TouchSensor>
+ 1e2:	89 2b       	or	r24, r25
+ 1e4:	99 f1       	breq	.+102    	; 0x24c <main+0x9c>
+ 1e6:	89 81       	ldd	r24, Y+1	; 0x01
+ 1e8:	9a 81       	ldd	r25, Y+2	; 0x02
+ 1ea:	84 36       	cpi	r24, 0x64	; 100
+ 1ec:	91 05       	cpc	r25, r1
+			{
+				flag = 0;
+				Buzzer_ctrl(0);
+ 1ee:	70 f5       	brcc	.+92     	; 0x24c <main+0x9c>
+ 1f0:	80 e0       	ldi	r24, 0x00	; 0
+ 1f2:	90 e0       	ldi	r25, 0x00	; 0
+ 1f4:	c2 df       	rcall	.-124    	; 0x17a <Buzzer_ctrl>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1f6:	2f ef       	ldi	r18, 0xFF	; 255
+ 1f8:	83 ec       	ldi	r24, 0xC3	; 195
+ 1fa:	99 e0       	ldi	r25, 0x09	; 9
+ 1fc:	21 50       	subi	r18, 0x01	; 1
+ 1fe:	80 40       	sbci	r24, 0x00	; 0
+ 200:	90 40       	sbci	r25, 0x00	; 0
+ 202:	e1 f7       	brne	.-8      	; 0x1fc <main+0x4c>
+				_delay_ms(200);
+				
+				RGB_ctrl(0x01);
+ 204:	00 c0       	rjmp	.+0      	; 0x206 <main+0x56>
+ 206:	00 00       	nop
+ 208:	81 e0       	ldi	r24, 0x01	; 1
+				Buzzer_ctrl(1);
+ 20a:	b5 df       	rcall	.-150    	; 0x176 <RGB_ctrl>
+ 20c:	81 e0       	ldi	r24, 0x01	; 1
+ 20e:	90 e0       	ldi	r25, 0x00	; 0
+ 210:	b4 df       	rcall	.-152    	; 0x17a <Buzzer_ctrl>
+				MotorSTOP();
+ 212:	78 df       	rcall	.-272    	; 0x104 <MotorSTOP>
+ 214:	2f ef       	ldi	r18, 0xFF	; 255
+ 216:	87 ea       	ldi	r24, 0xA7	; 167
+ 218:	91 e6       	ldi	r25, 0x61	; 97
+ 21a:	21 50       	subi	r18, 0x01	; 1
+ 21c:	80 40       	sbci	r24, 0x00	; 0
+ 21e:	90 40       	sbci	r25, 0x00	; 0
+ 220:	e1 f7       	brne	.-8      	; 0x21a <main+0x6a>
+				_delay_ms(2000);
+				
+				RGB_ctrl(0x00);
+ 222:	00 c0       	rjmp	.+0      	; 0x224 <main+0x74>
+ 224:	00 00       	nop
+ 226:	80 e0       	ldi	r24, 0x00	; 0
+				Buzzer_ctrl(0);
+ 228:	a6 df       	rcall	.-180    	; 0x176 <RGB_ctrl>
+ 22a:	80 e0       	ldi	r24, 0x00	; 0
+ 22c:	90 e0       	ldi	r25, 0x00	; 0
+				MotorBack();
+ 22e:	a5 df       	rcall	.-182    	; 0x17a <Buzzer_ctrl>
+ 230:	4d df       	rcall	.-358    	; 0xcc <MotorBack>
+ 232:	2f ef       	ldi	r18, 0xFF	; 255
+ 234:	8d e2       	ldi	r24, 0x2D	; 45
+ 236:	92 e2       	ldi	r25, 0x22	; 34
+ 238:	21 50       	subi	r18, 0x01	; 1
+ 23a:	80 40       	sbci	r24, 0x00	; 0
+ 23c:	90 40       	sbci	r25, 0x00	; 0
+ 23e:	e1 f7       	brne	.-8      	; 0x238 <main+0x88>
+ 240:	00 c0       	rjmp	.+0      	; 0x242 <main+0x92>
+				_delay_ms(700);
+				MotorSTOP();
+ 242:	00 00       	nop
+		{
+			MotorGo();
+			
+			if(TouchSensor() && distance < 100)
+			{
+				flag = 0;
+ 244:	5f df       	rcall	.-322    	; 0x104 <MotorSTOP>
+ 246:	00 e0       	ldi	r16, 0x00	; 0
+				
+				RGB_ctrl(0x00);
+				Buzzer_ctrl(0);
+				MotorBack();
+				_delay_ms(700);
+				MotorSTOP();
+ 248:	10 e0       	ldi	r17, 0x00	; 0
+			}
+			else if(distance < 100)
+ 24a:	be cf       	rjmp	.-132    	; 0x1c8 <main+0x18>
+ 24c:	89 81       	ldd	r24, Y+1	; 0x01
+ 24e:	9a 81       	ldd	r25, Y+2	; 0x02
+ 250:	84 36       	cpi	r24, 0x64	; 100
+ 252:	91 05       	cpc	r25, r1
+			{
+				RGB_ctrl(0x01);
+ 254:	90 f4       	brcc	.+36     	; 0x27a <main+0xca>
+ 256:	81 e0       	ldi	r24, 0x01	; 1
+				delay = 200;
+				
+				Buzzer_ctrl(1);
+ 258:	8e df       	rcall	.-228    	; 0x176 <RGB_ctrl>
+ 25a:	81 e0       	ldi	r24, 0x01	; 1
+ 25c:	90 e0       	ldi	r25, 0x00	; 0
+ 25e:	8d df       	rcall	.-230    	; 0x17a <Buzzer_ctrl>
+ 260:	2f ef       	ldi	r18, 0xFF	; 255
+ 262:	83 ec       	ldi	r24, 0xC3	; 195
+ 264:	99 e0       	ldi	r25, 0x09	; 9
+ 266:	21 50       	subi	r18, 0x01	; 1
+ 268:	80 40       	sbci	r24, 0x00	; 0
+ 26a:	90 40       	sbci	r25, 0x00	; 0
+ 26c:	e1 f7       	brne	.-8      	; 0x266 <main+0xb6>
+				_delay_ms(delay);
+				Buzzer_ctrl(0);
+ 26e:	00 c0       	rjmp	.+0      	; 0x270 <main+0xc0>
+ 270:	00 00       	nop
+ 272:	80 e0       	ldi	r24, 0x00	; 0
+ 274:	90 e0       	ldi	r25, 0x00	; 0
+ 276:	81 df       	rcall	.-254    	; 0x17a <Buzzer_ctrl>
+			}else if(distance < 200)
+ 278:	a7 cf       	rjmp	.-178    	; 0x1c8 <main+0x18>
+ 27a:	88 3c       	cpi	r24, 0xC8	; 200
+			{
+				RGB_ctrl(0x01);
+ 27c:	91 05       	cpc	r25, r1
+ 27e:	90 f4       	brcc	.+36     	; 0x2a4 <main+0xf4>
+ 280:	81 e0       	ldi	r24, 0x01	; 1
+				delay = 300;
+				
+				Buzzer_ctrl(1);
+ 282:	79 df       	rcall	.-270    	; 0x176 <RGB_ctrl>
+ 284:	81 e0       	ldi	r24, 0x01	; 1
+ 286:	90 e0       	ldi	r25, 0x00	; 0
+ 288:	78 df       	rcall	.-272    	; 0x17a <Buzzer_ctrl>
+ 28a:	2f ef       	ldi	r18, 0xFF	; 255
+ 28c:	85 ea       	ldi	r24, 0xA5	; 165
+ 28e:	9e e0       	ldi	r25, 0x0E	; 14
+ 290:	21 50       	subi	r18, 0x01	; 1
+ 292:	80 40       	sbci	r24, 0x00	; 0
+ 294:	90 40       	sbci	r25, 0x00	; 0
+ 296:	e1 f7       	brne	.-8      	; 0x290 <main+0xe0>
+				_delay_ms(delay);
+				Buzzer_ctrl(0);
+ 298:	00 c0       	rjmp	.+0      	; 0x29a <main+0xea>
+ 29a:	00 00       	nop
+ 29c:	80 e0       	ldi	r24, 0x00	; 0
+ 29e:	90 e0       	ldi	r25, 0x00	; 0
+ 2a0:	6c df       	rcall	.-296    	; 0x17a <Buzzer_ctrl>
+			}else if(distance < 300)
+ 2a2:	92 cf       	rjmp	.-220    	; 0x1c8 <main+0x18>
+ 2a4:	8c 32       	cpi	r24, 0x2C	; 44
+ 2a6:	21 e0       	ldi	r18, 0x01	; 1
+			{
+				RGB_ctrl(0x02);
+ 2a8:	92 07       	cpc	r25, r18
+ 2aa:	90 f4       	brcc	.+36     	; 0x2d0 <main+0x120>
+ 2ac:	82 e0       	ldi	r24, 0x02	; 2
+				delay = 400;
+				
+				Buzzer_ctrl(1);
+ 2ae:	63 df       	rcall	.-314    	; 0x176 <RGB_ctrl>
+ 2b0:	81 e0       	ldi	r24, 0x01	; 1
+ 2b2:	90 e0       	ldi	r25, 0x00	; 0
+ 2b4:	62 df       	rcall	.-316    	; 0x17a <Buzzer_ctrl>
+ 2b6:	8f ef       	ldi	r24, 0xFF	; 255
+ 2b8:	97 e8       	ldi	r25, 0x87	; 135
+ 2ba:	23 e1       	ldi	r18, 0x13	; 19
+ 2bc:	81 50       	subi	r24, 0x01	; 1
+ 2be:	90 40       	sbci	r25, 0x00	; 0
+ 2c0:	20 40       	sbci	r18, 0x00	; 0
+ 2c2:	e1 f7       	brne	.-8      	; 0x2bc <main+0x10c>
+ 2c4:	00 c0       	rjmp	.+0      	; 0x2c6 <main+0x116>
+				_delay_ms(delay);
+				Buzzer_ctrl(0);
+ 2c6:	00 00       	nop
+ 2c8:	80 e0       	ldi	r24, 0x00	; 0
+ 2ca:	90 e0       	ldi	r25, 0x00	; 0
+ 2cc:	56 df       	rcall	.-340    	; 0x17a <Buzzer_ctrl>
+			}
+			else if(distance < 400)
+ 2ce:	7c cf       	rjmp	.-264    	; 0x1c8 <main+0x18>
+ 2d0:	80 39       	cpi	r24, 0x90	; 144
+ 2d2:	21 e0       	ldi	r18, 0x01	; 1
+			{
+				RGB_ctrl(0x02);
+ 2d4:	92 07       	cpc	r25, r18
+ 2d6:	90 f4       	brcc	.+36     	; 0x2fc <main+0x14c>
+				delay = 500;
+				
+				Buzzer_ctrl(1);
+ 2d8:	82 e0       	ldi	r24, 0x02	; 2
+ 2da:	4d df       	rcall	.-358    	; 0x176 <RGB_ctrl>
+ 2dc:	81 e0       	ldi	r24, 0x01	; 1
+ 2de:	90 e0       	ldi	r25, 0x00	; 0
+ 2e0:	4c df       	rcall	.-360    	; 0x17a <Buzzer_ctrl>
+ 2e2:	8f ef       	ldi	r24, 0xFF	; 255
+ 2e4:	99 e6       	ldi	r25, 0x69	; 105
+ 2e6:	28 e1       	ldi	r18, 0x18	; 24
+ 2e8:	81 50       	subi	r24, 0x01	; 1
+ 2ea:	90 40       	sbci	r25, 0x00	; 0
+ 2ec:	20 40       	sbci	r18, 0x00	; 0
+ 2ee:	e1 f7       	brne	.-8      	; 0x2e8 <main+0x138>
+				_delay_ms(delay);
+				Buzzer_ctrl(0);
+ 2f0:	00 c0       	rjmp	.+0      	; 0x2f2 <main+0x142>
+ 2f2:	00 00       	nop
+ 2f4:	80 e0       	ldi	r24, 0x00	; 0
+ 2f6:	90 e0       	ldi	r25, 0x00	; 0
+			}else if(distance < 500)
+ 2f8:	40 df       	rcall	.-384    	; 0x17a <Buzzer_ctrl>
+ 2fa:	66 cf       	rjmp	.-308    	; 0x1c8 <main+0x18>
+ 2fc:	84 3f       	cpi	r24, 0xF4	; 244
+			{
+				RGB_ctrl(0x04);
+ 2fe:	91 40       	sbci	r25, 0x01	; 1
+ 300:	90 f4       	brcc	.+36     	; 0x326 <main+0x176>
+ 302:	84 e0       	ldi	r24, 0x04	; 4
+				delay = 600;
+				
+				Buzzer_ctrl(1);
+ 304:	38 df       	rcall	.-400    	; 0x176 <RGB_ctrl>
+ 306:	81 e0       	ldi	r24, 0x01	; 1
+ 308:	90 e0       	ldi	r25, 0x00	; 0
+ 30a:	37 df       	rcall	.-402    	; 0x17a <Buzzer_ctrl>
+ 30c:	8f ef       	ldi	r24, 0xFF	; 255
+ 30e:	9b e4       	ldi	r25, 0x4B	; 75
+ 310:	2d e1       	ldi	r18, 0x1D	; 29
+ 312:	81 50       	subi	r24, 0x01	; 1
+ 314:	90 40       	sbci	r25, 0x00	; 0
+ 316:	20 40       	sbci	r18, 0x00	; 0
+ 318:	e1 f7       	brne	.-8      	; 0x312 <main+0x162>
+ 31a:	00 c0       	rjmp	.+0      	; 0x31c <main+0x16c>
+ 31c:	00 00       	nop
+				_delay_ms(delay);
+				Buzzer_ctrl(0);
+ 31e:	80 e0       	ldi	r24, 0x00	; 0
+ 320:	90 e0       	ldi	r25, 0x00	; 0
+ 322:	2b df       	rcall	.-426    	; 0x17a <Buzzer_ctrl>
+ 324:	51 cf       	rjmp	.-350    	; 0x1c8 <main+0x18>
+ 326:	80 e0       	ldi	r24, 0x00	; 0
+			}
+			else
+			{
+				RGB_ctrl(0x00);
+ 328:	26 df       	rcall	.-436    	; 0x176 <RGB_ctrl>
+ 32a:	80 e0       	ldi	r24, 0x00	; 0
+ 32c:	90 e0       	ldi	r25, 0x00	; 0
+				Buzzer_ctrl(0);
+ 32e:	25 df       	rcall	.-438    	; 0x17a <Buzzer_ctrl>
+ 330:	4b cf       	rjmp	.-362    	; 0x1c8 <main+0x18>
+
+00000332 <__udivmodsi4>:
+ 332:	a1 e2       	ldi	r26, 0x21	; 33
+ 334:	1a 2e       	mov	r1, r26
+ 336:	aa 1b       	sub	r26, r26
+ 338:	bb 1b       	sub	r27, r27
+ 33a:	fd 01       	movw	r30, r26
+ 33c:	0d c0       	rjmp	.+26     	; 0x358 <__udivmodsi4_ep>
+
+0000033e <__udivmodsi4_loop>:
+ 33e:	aa 1f       	adc	r26, r26
+ 340:	bb 1f       	adc	r27, r27
+ 342:	ee 1f       	adc	r30, r30
+ 344:	ff 1f       	adc	r31, r31
+ 346:	a2 17       	cp	r26, r18
+ 348:	b3 07       	cpc	r27, r19
+ 34a:	e4 07       	cpc	r30, r20
+ 34c:	f5 07       	cpc	r31, r21
+ 34e:	20 f0       	brcs	.+8      	; 0x358 <__udivmodsi4_ep>
+ 350:	a2 1b       	sub	r26, r18
+ 352:	b3 0b       	sbc	r27, r19
+ 354:	e4 0b       	sbc	r30, r20
+ 356:	f5 0b       	sbc	r31, r21
+
+00000358 <__udivmodsi4_ep>:
+ 358:	66 1f       	adc	r22, r22
+ 35a:	77 1f       	adc	r23, r23
+ 35c:	88 1f       	adc	r24, r24
+ 35e:	99 1f       	adc	r25, r25
+ 360:	1a 94       	dec	r1
+ 362:	69 f7       	brne	.-38     	; 0x33e <__udivmodsi4_loop>
+ 364:	60 95       	com	r22
+ 366:	70 95       	com	r23
+ 368:	80 95       	com	r24
+ 36a:	90 95       	com	r25
+ 36c:	9b 01       	movw	r18, r22
+ 36e:	ac 01       	movw	r20, r24
+ 370:	bd 01       	movw	r22, r26
+ 372:	cf 01       	movw	r24, r30
+ 374:	08 95       	ret
+
+00000376 <__umulhisi3>:
+ 376:	a2 9f       	mul	r26, r18
+ 378:	b0 01       	movw	r22, r0
+ 37a:	b3 9f       	mul	r27, r19
+ 37c:	c0 01       	movw	r24, r0
+ 37e:	a3 9f       	mul	r26, r19
+ 380:	70 0d       	add	r23, r0
+ 382:	81 1d       	adc	r24, r1
+ 384:	11 24       	eor	r1, r1
+ 386:	91 1d       	adc	r25, r1
+ 388:	b2 9f       	mul	r27, r18
+ 38a:	70 0d       	add	r23, r0
+ 38c:	81 1d       	adc	r24, r1
+ 38e:	11 24       	eor	r1, r1
+ 390:	91 1d       	adc	r25, r1
+ 392:	08 95       	ret
+
+00000394 <_exit>:
+ 394:	f8 94       	cli
+
+00000396 <__stop_program>:
+ 396:	ff cf       	rjmp	.-2      	; 0x396 <__stop_program>
