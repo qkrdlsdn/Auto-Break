@@ -5,4 +5,4 @@
 
 ##### 프로젝트 실행 영상
 
-<img src="https://github.com/qkrdlsdn/Auto-Break/issues/1#issue-1268871250">
+<img src="https://github.com/qkrdlsdn/Auto-Break/issues/2#issue-1268946792">
