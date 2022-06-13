@@ -4,3 +4,5 @@
 #### 물체와의 거리가 가까워 질수록 부저의 경고음 간격이 짧아지고 일정 거리 이상 다가오면 멈춘다.
 
 ##### 프로젝트 실행 영상
+
+<img src="https://github.com/qkrdlsdn/Auto-Break/issues/1#issue-1268871250">
