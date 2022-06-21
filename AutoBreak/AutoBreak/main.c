@@ -127,6 +127,9 @@ int main(void)
 				RGB_ctrl(0x01);
 				delay = 200;
 				
+				MotorSTOP();
+				_delay_ms(1000);
+				
 				Buzzer_ctrl(1);
 				_delay_ms(delay);
 				Buzzer_ctrl(0);
